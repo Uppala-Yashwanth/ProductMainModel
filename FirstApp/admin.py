@@ -8,12 +8,12 @@ class productAdmin(admin.ModelAdmin):
 admin.site.register(ProductMainModel,productAdmin)
 
 class colourAdmin(admin.ModelAdmin):
-    list_display = ['Colour']
+    list_display = ['product','Colour']
 
 
 admin.site.register(ProductcolorModel,colourAdmin)
 
 class imagemodelAdmin(admin.ModelAdmin):
-    list_display = ['image']
+    list_display = ['product','image']
 
 admin.site.register(productImageModel,imagemodelAdmin)
